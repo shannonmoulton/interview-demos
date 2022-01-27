@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.125rem;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 65%;
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 1.125rem;
+}
+
+.multiSelectCol {
+  padding: 12px;
+  margin-top: 28px;
+}
+.checkbox {
+  margin-left: 25px;
+}
+
+textarea {
+  height: fit-content;
+}
+
+label {
+  margin-top: 12px;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+button {
+  background-color: #5bb85b;
+  color: white;
+  padding: 12px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rowOfButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+.cancel {
+  color: red;
+  margin-left: 10px;
+}
+
+.formContainer {
+  width: 900px;
+  height: 600px;
+  border-radius: 5px;
+  margin: auto;
+  border: 1px solid #cbedf4;
+}
+
+.formHeader {
+  background-color: #d9edf7;
+  border: 1px solid #cbedf4;
+}
+
+h1 {
+  margin-left: 10px;
+  color: #1f6c93;
+  font-size: 1.75rem;
+}
+
+label {
+  font-size: 1.25rem;
+}
+
+form {
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 685px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 685px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  .formContainer {
+    width: 400px;
+    height: auto;
+  }
+  label {
+    font-size: 1.125rem;
+    padding: 0%;
+  }
+}

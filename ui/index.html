@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickbase Coding Challenge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="formContainer">
+        <div class="formHeader">
+            <h1>Field Builder</h1>
+        </div>
+        <form>
+
+            <div class="row">
+                <div class="col-25"><label for="label" class="labelFontSize">Label</label></div>
+                <div class="col-75"><input type="text" id="label" name="label" class="clearInput" required /></div>
+            </div>
+
+            <div class="row">
+                <div class="col-25"><label for="type" class="labelFontSize">Type</label></div>
+                <div class="col-75">
+                    <span class="multiSelectCol">Multi-select</span>
+                    <input type="checkbox" id="required" class="checkbox multiSelectCol">
+                    <span class="multiSelectCol">A Value is required</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25"><label for="defaultValue" class="labelFontSize">Default Value</label></div>
+
+                <div class="col-75"><input type="text" id="defaultValue" class="clearInput"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-25"><label for="choices" class="labelFontSize">Choices</label></div>
+                <div class="col-75">
+                    <textarea id="choices" name="choices" wrap="hard" class="clearInput"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25"><label class="labelFontSize">Order</label></div>
+                <div class="col-75">
+                    <select name="order" id="order" rows="50" maxlength="2000">
+                        <option value="asTyped">Order as typed</option>
+                        <option value="alpha">Display choices in
+                            Alphabetical</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="rowOfButtons">
+                <button type="button" id="submitForm"> Save changes</button>
+                <button id="clearForm">Clear</button>
+                <span>Or</span>
+                <span class="cancel">Cancel</span>
+
+            </div>
+
+        </form>
+
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
